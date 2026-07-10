@@ -1,12 +1,12 @@
 [package]
-name = "ecnu-math-hwk"
-version = "0.1.1"
+name = "zjut-phy-hwk"
+version = "0.2.0"
 entrypoint = "lib.typ"
 authors = ["syqwq-OMG"]
 license = "MIT"
-description = "ECNU 作业解答模板 推荐是 Problem-Solution/Proof 的形式"
+description = "物理作业解答模板，支持(a)(b)(c)子题编号和物理常数"
 repository = "https://github.com/syqwq-OMG/ecnu-math-hwk"
-keywords = ["ECNU","homework" ,"East China Normal University"]
+keywords = ["ZJUT", "physics", "homework", "浙江工业大学", "物理"]
 categories = ["report"]
 exclude = ["pic"]
 compiler = "0.13.1"

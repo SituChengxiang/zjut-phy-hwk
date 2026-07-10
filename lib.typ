@@ -1,4 +1,5 @@
 #import "utils.typ": *
+#import "physics.typ": *
 
 #let hwk(title: none, course: "course", hwk-id: 0, author: "author", stu-id: 20050910, body) = context {
   show: show-math-format
@@ -23,10 +24,11 @@
       if here().page() == 1 {
         return
       }
-      box(outset: 4pt, stroke: (bottom: 0.5pt + luma(220)))[#text(font: (
-          en-font-serif,
-          cn-font-serif,
-        ))[#title --- #author] #h(1fr) #counter(page).display()]
+      box(outset: 4pt, stroke: (bottom: 0.5pt + luma(220)))[
+        #text(font: (en-font-serif, cn-font-serif))[#_title #sym.dash.em #author]
+        #box(width: 1fr)
+        #counter(page).display()
+      ]
     },
     footer: context {
       // 仅在第一页显示页脚页码
@@ -39,7 +41,7 @@
   )
 
   align(center)[
-    #block(text(weight: 500, 17pt, _title))
+    #block(text(font: (en-font-sans, cn-font-sans), weight: 500, 17pt, _title))
     #v(1.5em, weak: true)
     #text(14pt)[#author #stu-id]
     #v(1.5em, weak: true)
