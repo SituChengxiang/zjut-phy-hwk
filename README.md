@@ -15,7 +15,7 @@
 
 ## 预览
 
-可参考仓库中的 `template/hw.typ` 和 `template/hw-en.typ` 文件。
+可参考仓库中的 `template/hw.typ`（中文排版）`template/hw-en.typ` （英文统计力学期中排版）和`qm-midterm.typ`（英文量子力学期中排版）文件。
 
 |1|2|3|
 |:-:|:-:|:-:|
